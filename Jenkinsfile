@@ -4,7 +4,7 @@ pipeline {
         stage('Node Version 14') {
             agent {
                 docker { 
-                    image 'node:14' 
+                    image 'node:>=14'
                     }
             }
             environment {
